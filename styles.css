@@ -1,0 +1,399 @@
+*{
+    margin:0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    background-image: url(/assets/bg-main-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    position: relative;
+}
+
+.top--right {
+    display: none;
+}
+
+.top--right--img {
+    display: none;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1400px;
+    padding: 0;
+}
+
+.container--flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.margin--top {
+    margin-top: 2em;
+}
+
+.logo--img {
+    width: 180.09px;
+    height: auto;
+}
+
+.headline h1 {
+    margin-top: 1em;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.headline p {
+    margin-top: 1em;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.hero {
+   margin-top: 4em;
+   margin-bottom: 6em;
+   position: relative;
+}
+
+/* img section */
+
+.phone--img {
+    width: 250px;
+    }
+
+.phone--box {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   z-index: 1;
+}
+
+
+.black--box {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 12em;
+    background-color: black;
+    height: 600px;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 0;
+    position: absolute;
+    top: -50px;
+}
+
+.bg--img {
+    margin-top: 1em;
+    z-index: 1;
+}
+
+.card--box {
+    display: flex;
+    justify-content: center;
+    background-color: #fa7453;
+    border-radius: 20px;
+    padding: 2em;
+    max-width: 747px;
+    z-index: 0;
+    position: relative;
+    top: 60px;
+}
+
+.card h3 {
+   font-size: 2rem;
+   color: #fff;
+
+}
+
+.card p {
+    margin-top: 1.5em;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.card h4 {
+    font-size: 4rem;
+    margin-top: .5em;
+    color: #fff;
+}
+
+.card-span {
+    font-size: 1rem;
+    margin-left: 1em;
+    color: #fff;
+}
+
+.apple {
+    margin-top: 1em;
+    display: block;
+    padding: 1em 6em;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.android {
+    margin-top: 1em;
+    display: block;
+    padding: 1em 5.1em;
+    border-radius: 10px;
+    border-style: none;
+}
+
+
+footer {
+    margin-bottom: 1em;
+}
+
+.footer--body {
+    margin-top: 1em;
+}
+
+.footer--img {
+    margin-left: 0;
+}
+
+.social--icon {
+    margin: 1.5em .5em;
+    width: 20px;
+}
+
+/* tablet media queries */
+/* ******************** */
+
+@media (min-width: 820px) {
+
+    body {
+        background-image: url(/assets/bg-main-tablet.png); 
+        overflow-x: hidden;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .img--grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 60px;
+    }
+
+    .top--right--img {
+        display: block;
+        position: absolute;
+        top: -10px;
+        right: 0px;
+        width: 30%;
+    }
+
+    .headline h1 {
+        margin-top: 1em;
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 1;
+    }
+    
+    .headline p {
+        margin-top: 1em;
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+
+    .hero {
+      max-width: 1400px;
+    }
+
+    .phone--box {
+        position: relative;
+        z-index: 1;
+        left: -220px;
+    }
+
+    .phone--img {
+        width: 300px;
+        position: relative;
+    }
+
+    .card--box {
+        position: relative;
+        z-index: 1;
+        left: 90px;
+        top: -280px;
+        width: 450px;
+    }
+
+    .card h3 {
+        font-size: 3rem;
+        color: #fff;
+     
+     }
+     
+     .card p {
+         margin-top: 1.5em;
+         font-size: 1.5rem;
+         line-height: 1.5;
+         color: #fff;
+     }
+     
+     .card h4 {
+         font-size: 5rem;
+     }
+     
+     .card-span {
+         font-size: 1rem;
+         margin-left: 1em;
+         color: #fff;
+     }
+     
+     .apple,
+     .android  {
+         font-size: 1.3rem;
+     }
+     
+     .hero {
+        margin-bottom: 0em;
+        height: 1100px;
+     }
+
+     footer {
+         margin-bottom: 2em;
+     }
+
+
+     .container--flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     
+    }
+
+    .social--box {
+        display: flex;
+        flex-direction: row;
+        margin-right: 0;
+    }
+
+    .footer--body {
+        margin-left: 0;
+    }
+
+}
+
+
+/* larger screens 1400px */
+
+
+@media (min-width: 1400px) {
+    
+    body {
+        background-image: url(/assets/bg-main-desktop.png); 
+    }
+    
+    .headline--text--holder {
+        margin-top: 2em;
+    }
+
+    .headline h1 {
+        margin-top: 0em;
+        margin-left: 0;
+        font-size: 7rem;
+        font-weight: 900;
+        line-height: 1;
+        max-width: 900px;
+    }
+    
+    .headline p {
+        margin-top: 1em;
+        margin-left: 0;
+        font-size: 2rem;
+        line-height: 1.7;
+        max-width: 1000px;
+    }
+
+    .hero {
+      max-width: 1400px;
+    }
+
+    .phone--box {
+        position: relative;
+        z-index: 1;
+        left: -420px;
+    }
+
+    .phone--img {
+        width: 300px;
+        position: relative;
+    }
+
+    .card--box {
+        position: relative;
+        z-index: 1;
+        left: 300px;
+        top: -380px;
+        width: 450px;
+    }
+
+    .card h3 {
+        font-size: 3rem;
+        color: #fff;
+     
+     }
+     
+     .card p {
+         margin-top: 1.5em;
+         font-size: 1.5rem;
+         line-height: 1.5;
+         color: #fff;
+     }
+     
+     .card h4 {
+         font-size: 5rem;
+     }
+     
+     .card-span {
+         font-size: 1rem;
+         margin-left: 1em;
+         color: #fff;
+     }
+     
+     .apple,
+     .android  {
+         font-size: 1.3rem;
+     }
+     
+     .hero {
+        margin-bottom: 0em;
+        height: 1000px;
+     }
+
+     .img--grid {
+         display: grid;
+         grid-template-columns: 2fr 1fr;
+     }
+
+     .top--right--img {
+        display: block;
+        position: absolute;
+        top: -20px;
+        right: 0px;
+        width: 500px;
+    }
+
+}
+
+
+
